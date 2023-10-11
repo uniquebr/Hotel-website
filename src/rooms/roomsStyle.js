@@ -1,59 +1,15 @@
-import { Link } from 'react-router-dom';
 import styled from 'styled-components';
-import backImgRooms from '../assets/backimageRooms.png';
-export const NavLink = styled(Link)`
-text-decoration: none;
-`
+import backImgRooms from '../assets/backimageRooms.png'
 
-export const Navbar=styled.div`
+export const Container=styled.div`
 background-image: url(${backImgRooms});
 background-size: 100% 1080px;
 height: 1080px;
 flex-shrink: 0;
-margin-top: 100px;
-.navbarTop{
-display: flex;
-
-}
-
-.navbarLeft{
-flex: 1;
-}
-
-.navbarRight{
-display: flex;
-flex: 1;
-justify-content: space-around;
-margin-top:59px;
-color: #FFF;
-font-family: Montserrat;
-font-size: 20px;
-font-style: normal;
-font-weight: 700;
-line-height: normal; 
-padding-right: 70px;
-padding-left: 100px;
-}
-.navbarLeftRectangle{
-margin-top:0px;
-padding-top:0px;
-}
-.navbarImageDiv{
-width: 216px;
-height: 119px;
-border-bottom-right-radius: 40px;
-border-bottom-left-radius: 40px;
-margin-left:213px;
-text-align: center;
-background-color: #E0B973;
-}
-
-
 .WelcomeDiv{
 width: 498.24px;
 height: 328px;
-flex-shrink: 0;
-margin-left: 213.24px;
+padding:50px;
 }
 h2{
 color: #FFF;
@@ -86,6 +42,56 @@ line-height: normal;
 letter-spacing: 24px;
 margin-bottom: 0px;
 margin-top: 0px;
+}
+p{
+color: #FFF;
+font-family: Montserrat;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: 2.5px;
+margin-bottom: 0px;
+margin-top: 14px;
+}
+.bookButton{
+width: 228px;
+height: 78px;
+flex-shrink: 0;
+background-color: #E0B973;
+margin-top:108px;
+color: #FFF;
+font-family: Montserrat;
+font-size: 25px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+display: flex;
+align-items:center;
+margin-left:42.5%;
+border-radius: 10px;
+border: none;
+}
+.buttonScroll{
+width: 60.595px;
+height: 60.841px;
+flex-shrink: 0;
+margin-top:15px;
+background-color:none;
+background: none;
+border: none;
+margin-left:723px;
+}
+.ScrollP{
+margin-top:80px;
+color: #FFF;
+font-family: Montserrat;
+font-size: 25px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: 1.25px;
+text-align: center;
 }
 p{
 color: #FFF;

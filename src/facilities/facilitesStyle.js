@@ -1,61 +1,16 @@
 import styled from "styled-components";
 import backImg2 from '../assets/backimageFacilities.png'
 
-import { Link } from "react-router-dom";
-
-export const NavLink = styled(Link)`
-text-decoration: none;
-`
-
-export const Navbar=styled.div`
+export const Container=styled.div`
 background-image: url(${backImg2});
 background-size: 100% 1080px;
 height: 1080px;
 flex-shrink: 0;
-margin-top:100px;
-.navbarTop{
-display: flex;
-
-}
-
-.navbarLeft{
-flex: 1;
-}
-
-.navbarRight{
-display: flex;
-flex: 1;
-justify-content: space-around;
-margin-top:59px;
-color: #FFF;
-font-family: Montserrat;
-font-size: 20px;
-font-style: normal;
-font-weight: 700;
-line-height: normal; 
-padding-right: 70px;
-padding-left: 100px;
-}
-.navbarLeftRectangle{
-margin-top:0px;
-padding-top:0px;
-}
-.navbarImageDiv{
-width: 216px;
-height: 119px;
-border-bottom-right-radius: 40px;
-border-bottom-left-radius: 40px;
-margin-left:213px;
-text-align: center;
-background-color: #E0B973;
-}
-
 
 .WelcomeDiv{
 width: 498.24px;
 height: 328px;
-flex-shrink: 0;
-margin-left: 213.24px;
+padding:50px;
 }
 h2{
 color: #FFF;

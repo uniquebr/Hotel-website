@@ -9,7 +9,6 @@ const FotterStyle = () => {
         <div className='FotterH1div'>
           <h1>LUXURY</h1>
           <h6>HOTELS</h6>
-
           <div className='FotterPDiv'>
             <p className='FotterP'>497 Evergreen Rd. Roseville, CA 95673 +44 345 678 903 luxury_hotels@gmail.com</p>
           </div>

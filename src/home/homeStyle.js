@@ -1,60 +1,16 @@
 import backImg from '../assets/homeBackground.png'
-import { Link } from "react-router-dom";
 import styled from 'styled-components';
 
-export const NavLink = styled(Link)`
-text-decoration: none;
-`
-
-export const Navbar=styled.div`
+export const Container=styled.div`
 background-image: url(${backImg});
 background-size: 100% 1080px;
 height: 1080px;
-flex-shrink: 0;
-
-.navbarTop{
-display: flex;
-
-}
-
-.navbarLeft{
-flex: 1;
-}
-
-.navbarRight{
-display: flex;
-flex: 1;
-justify-content: space-around;
-margin-top:59px;
-color: #FFF;
-font-family: Montserrat;
-font-size: 20px;
-font-style: normal;
-font-weight: 700;
-line-height: normal; 
-padding-right: 70px;
-padding-left: 100px;
-}
-.navbarLeftRectangle{
-margin-top:0px;
-padding-top:0px;
-}
-.navbarImageDiv{
-width: 216px;
-height: 119px;
-border-bottom-right-radius: 40px;
-border-bottom-left-radius: 40px;
-margin-left:213px;
-text-align: center;
-background-color: #E0B973;
-}
-
-
+flex-shrink: 0; 
 .WelcomeDiv{
 width: 498.24px;
 height: 328px;
-flex-shrink: 0;
-margin-left: 213.24px;
+padding: 1px;
+margin-left:15%;
 }
 h2{
 color: #FFF;
@@ -102,9 +58,9 @@ margin-top: 14px;
 .bookButton{
 width: 228px;
 height: 78px;
-flex-shrink: 0;
 background-color: #E0B973;
-margin-top:108px;
+margin-top:200px;
+margin-bottom:0px;
 color: #FFF;
 font-family: Montserrat;
 font-size: 25px;
@@ -113,19 +69,30 @@ font-weight: 700;
 line-height: normal;
 display: flex;
 align-items:center;
-margin-left:42.5%;
+text-align:center;
 border-radius: 10px;
 border: none;
+padding:0px;
+}
+.bookButtonCenter{
+display: flex;
+justify-content:center;
 }
 .buttonScroll{
 width: 60.595px;
 height: 60.841px;
 flex-shrink: 0;
-margin-top:15px;
+margin-top:1px;
 background-color:none;
 background: none;
 border: none;
-margin-left:723px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.buttonScrollCenter{
+display: flex;
+justify-content:center;
 }
 .ScrollP{
 margin-top:80px;
@@ -140,7 +107,7 @@ text-align: center;
 }
 `
 export const Home=styled.div`
-height:1600px;
+height:1600px;  
 .homeTitle{
 color: #14274A;
 font-family: Montserrat;
@@ -160,18 +127,19 @@ font-size: 30px;
 font-style: normal;
 font-weight: 700;
 line-height: normal;
+padding-left:30px;
 }
 .homeInfo{
-display: flex;
 margin-top: 93px;
+display:grid;
+grid-template-columns: 1fr 1fr;
+justify-items: center;
+padding-left: 100px;
+padding-right: 100px;
+
 }
 
 .homeText{
-display: flex;
-flex-direction: column;
-flex:1;
-margin-left: 151px;
-padding-left:48px;
 position: relative;
 }
 .HomeTextP{
@@ -184,6 +152,8 @@ line-height: 40px; /* 160% */
 width: 390px;
 height: 40px;
 margin-top:0px;
+padding-left:30px;
+
 }
 
 .homeText::before {
@@ -195,10 +165,7 @@ margin-top:0px;
   height: 65%;
   background-color: black;
 }
-.homeImage{
-flex:1;
-margin-right: 199px;
-}
+
 .imageSize{
 width: 603px;
 height: 443px;
@@ -221,6 +188,8 @@ background-color: #E0B973;
 border-radius: 7px;
 border: none;
 margin-top: 130px;
+margin-left:5%;
+
 }
 .imageSize2{
 width: 603px;
@@ -229,16 +198,17 @@ flex-shrink: 0;
 padding-top:20px
 }
 .homeInfo2{
-display: flex;
 margin-top: 93px;
+display:grid;
+grid-template-columns: 1fr 1fr;
+justify-items: center;
+padding-left: 100px;
+padding-right: 100px;
+
 }
 
 .homeText2{
-display: flex;
-flex-direction: column;
-flex:1;
-margin-left: 151px;
-padding-left:48px;
+
 position: relative;
 }
 .HomeTextP2{
@@ -251,6 +221,8 @@ line-height: 40px; /* 160% */
 width: 390px;
 height: 40px;
 margin-top:0px;
+padding-left:30px;
+
 }
 
 .homeText2::before {
@@ -258,13 +230,9 @@ content: '';
 position: absolute;
 top: 9%; 
 left: 0;
-width: 2px; 
+width: 3px; 
 height: 90%;
 background-color: black;
-}
-.homeImage2{
-flex:1;
-margin-right: 199px;
 }
 
 .home2h1{
@@ -275,6 +243,7 @@ font-size: 30px;
 font-style: normal;
 font-weight: 700;
 line-height: normal;
+padding-left:30px;
 }
 
 .button2{
@@ -292,6 +261,7 @@ background-color: #E0B973;
 border-radius: 7px;
 border: none;
 margin-top: 165px;
+margin-left:5%;
 }
 .TestimonialsDiv{
 display:flex;

@@ -2,14 +2,14 @@ import styled from "styled-components";
 export const FotterBackground=styled.div`
 background-color: #14274A;
 height: 250.986px;
-flex-shrink: 0;
-display: flex;
+display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr;
+padding-left:70px;
+padding-right:70px;
 margin-top:100px;
 .FotterH1div{
   display: flex;
   flex-direction: column;
-  margin-left: 185px;
-  
 }
 h1{
 color: #FFF;
@@ -33,7 +33,7 @@ line-height: normal;
 letter-spacing: 3.75px;
 margin-bottom: 0px;
 margin-top: 0px;
-margin-left:30px;
+padding-left:28px;
 
 }
 .FotterPDiv{
@@ -50,7 +50,6 @@ font-weight: 400;
 line-height: normal;
 }
 .AboutP{
-margin-left:150px;
 margin-top:54px;
 
 }
@@ -65,13 +64,12 @@ flex-shrink: 0px;
 
 }
 .svgImg{
-    display: inline-block; /* Makes the SVG element inline with the text */
+    display: inline-block; 
     vertical-align: middle; 
 }
 .InputDiv{
 display:flex;
 margin-top:20px;
-margin-left: 50px;
 stroke-width: 2px;
 stroke: #E0B973;
 }
@@ -80,7 +78,6 @@ width: 278px;
 height: 30px;
 flex-shrink: 0;
 stroke-width: 2px;
-stroke: #E0B973;
 border: solid 3px;
 border-color: #E0B973;
 background-color: #14274A;
@@ -108,7 +105,6 @@ font-size: 16px;
 font-style: normal;
 font-weight: 400;
 line-height: normal;
-margin-left: 50px;
 }
 .ButtonAndInput{
 margin-top:54px;
